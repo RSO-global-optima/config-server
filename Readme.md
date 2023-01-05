@@ -18,3 +18,10 @@ Check the correct versions with `mvn --version`
 - run locally `java -jar target/delivery-server-1.0-SNAPSHOT.jar`  
   Service can be accessed via [http://localhost:8080/config](http://localhost:8080/config)
 
+### Update config value
+on http://localhost:8500 - consul agent  
+add KEY:    
+environments/dev/services/config-service/1.0.0/config/rest-config/maintenance  
+with value either true of false
+
+

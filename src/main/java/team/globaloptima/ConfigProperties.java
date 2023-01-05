@@ -34,13 +34,13 @@ import javax.enterprise.context.ApplicationScoped;
 public class ConfigProperties {
 
     @ConfigValue(watch = true)
-    private Boolean maintenanceMode;
+    private Boolean maintenance;
 
-    public Boolean getMaintenanceMode() {
-        return this.maintenanceMode;
+    public Boolean getMaintenance() {
+        return this.maintenance;
     }
 
-    public void setMaintenanceMode(final Boolean maintenanceMode) {
-        this.maintenanceMode = maintenanceMode;
+    public void setMaintenance(final Boolean maintenance) {
+        this.maintenance = maintenance;
     }
 }

@@ -48,11 +48,11 @@ public class ConfigResource {
     @Path("/config")
     public Response test() {
         String response =
-                "{maintananceMode: %b}";
+                "{maintenance: %b}";
 
         response = String.format(
                 response,
-                properties.getMaintenanceMode());
+                properties.getMaintenance());
 
         return Response.ok(response).build();
     }
@@ -60,6 +60,6 @@ public class ConfigResource {
     @GET
     @Path("/get")
     public Response get() {
-        return Response.ok(ConfigurationUtil.getInstance().get("rest-config.string-property").orElse("nope")).build();
+        return Response.ok(ConfigurationUtil.getInstance().get("rest-config.maintenance").orElse("nope")).build();
     }
 }
