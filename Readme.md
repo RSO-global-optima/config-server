@@ -1,6 +1,6 @@
 # Global Optima - Config microservice
 ### Goals
-- Configuration with consul
+- Mockup showcase of dynamic reconfiguration using consul
 
 ---
 
