@@ -16,7 +16,7 @@ Check the correct versions with `mvn --version`
 ### How to run
 - build the project `mvn clean package`
 - run locally `java -jar target/delivery-server-1.0-SNAPSHOT.jar`  
-  Service can be accessed via [http://localhost:8080/config](http://localhost:8080/config)
+  Service can be accessed via [http://localhost:8080/v1/config](http://localhost:8080/v1/config)
 
 ### Update config value
 on http://localhost:8500 - consul agent  
